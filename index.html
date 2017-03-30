@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+                 height=device-height,
+                 initial-scale = 1.0,
+                 minimum-scale = 1.0,
+                 maximum-scale = 1.0,
+                 user-scalable = no">
+    <title>canvas手写一个字</title>
+    <script src="./jquery-3.1.0.min.js"></script>
+    <style>
+        #canvas{
+            margin: 0 auto;
+            display: block;
+            border: 1px solid #b8b8b8;
+        }
+        #controller{
+            margin: 0 auto;
+        }
+        .color_btn{
+            float: left;
+            margin: 10px 10px 0 0;
+            border: 3px solid #fff;
+            width: 30px;
+            height: 30px;
+            border-radius: 5px 5px;
+            cursor: pointer;
+        }
+        .color_btn:hover{
+            border: 3px solid violet;
+        }
+        .color_btn_selected{
+            border: 3px solid blueviolet;
+        }
+        #black_btn{
+             background-color: black;
+         }
+        #blue_btn{
+            background-color: blue;
+        }
+        #green_btn{
+            background-color: green;
+        }
+        #red_btn{
+            background-color: red;
+        }
+        #orange_btn{
+            background-color: orange;
+        }
+        #yellow_btn{
+            background-color: yellow;
+        }
+        .op_btn{
+            width: 60px;
+            height: 30px;
+            margin: 10px 0 0 10px;
+            line-height: 30px;
+            text-align: center;
+            float: right;
+            border: 2px solid #aaa;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .op_btn:hover{
+            border: 2px solid #1d4b8f;
+            background-color: #8bc9e3;
+        }
+        .clearfix{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas">你的浏览器不支持canvas，请更新浏览器或者更换其他浏览器</canvas>
+    <div id="controller">
+        <div id="black_btn" class="color_btn color_btn_selected"></div>
+        <div id="blue_btn" class="color_btn"></div>
+        <div id="green_btn" class="color_btn"></div>
+        <div id="red_btn" class="color_btn"></div>
+        <div id="orange_btn" class="color_btn"></div>
+        <div id="yellow_btn" class="color_btn"></div>
+
+        <div id="clear_btn" class="op_btn">清 除</div>
+        <div class="clearfix"></div>
+    </div>
+    <script src="./Jscript.js"></script>
+</body>
+</html>
