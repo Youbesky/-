@@ -1,2 +1,2 @@
 # -
-通过canvas实现的写字板功能
+this is a writing board which use canvas comply.
