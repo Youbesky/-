@@ -14,7 +14,6 @@
 
 //调整控件自适应
 $("#controller").css("width",canvas.width+"px");
-
     drawGrid();
 
 //清除书写内容
@@ -38,7 +37,6 @@ function beginStroke(point) {
 //lastLocation是上一次的鼠标位置
     lastLocation = windowToCanvas(point.x,point.y);
     lastTimestamp = new Date().getTime();
-
 //  console.log("x:"+location.x,"y:"+location.y);
 }
 //检测书写事件结束
